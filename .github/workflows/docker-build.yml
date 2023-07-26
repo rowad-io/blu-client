@@ -33,4 +33,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: abuqusai/blu:client-${GITHUB_REF##*/}-${{ steps.commit.outputs.short }}
+          tags: abuqusai/blu:client-${{ steps.commit.outputs.short }}

@@ -1,0 +1,29 @@
+.store-page {
+  height: 100%;
+
+  .sidebar {
+    z-index: 2;
+  }
+
+  .blackscreen {
+    position: fixed;
+    z-index: 1;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1),
+      visibility 0s cubic-bezier(0.19, 1, 0.22, 1) 0.5s,
+      z-index 0s cubic-bezier(0.19, 1, 0.22, 1) 0.5s,
+      top 0s cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .sidebar:hover + .store-inner .blackscreen {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+  }
+}

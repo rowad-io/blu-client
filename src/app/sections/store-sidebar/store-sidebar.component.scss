@@ -1,0 +1,23 @@
+:host ::ng-deep {
+  .p-megamenu {
+    background: white;
+    border: unset;
+    width: 60px;
+    height: 100%;
+
+    .p-menuitem-text,
+    .p-submenu-icon {
+      display: none;
+    }
+
+    &:hover {
+      position: absolute;
+      width: auto;
+
+      .p-menuitem-text,
+      .p-submenu-icon {
+        display: block;
+      }
+    }
+  }
+}

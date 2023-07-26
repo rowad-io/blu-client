@@ -1,0 +1,10 @@
+.angular
+.storybook
+.vscode
+.editorconfig
+.gitignore
+build-storybook.log
+documentation.json
+README.md
+
+node_modules

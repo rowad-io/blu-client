@@ -1,1 +1,23 @@
-<p>header-navigation works!</p>
+<div class="flex-grow bg-sky-100">
+  <div class="flex flex-row items-center container h-[60px]">
+    <nav class="flex flex-grow">
+      <p-button
+        styleClass="flex-shrink p-button-rounded p-button-sm relative bg-white border-0 font-semibold">
+        <div class="flex w-9 h-9 left-1 absolute items-center place-content-center bg-blue-600 rounded-full">
+          <mat-icon fontSet="material-symbols-rounded">menu</mat-icon>
+        </div>
+        <span class="pl-8 text-black">All Categories</span>
+      </p-button>
+      <ul class="flex items-center flex-row gap-x-1.5">
+        <li class="px-4">
+          <a href="#">Promotions</a>
+        </li>
+        <li class="px-4"><a href="#">Stores</a></li>
+        <li class="px-4"><a href="#">Our Contacts</a></li>
+        <li class="px-4"><a href="#">Delivery & Return</a></li>
+        <li class="px-4"><a href="#">Outlet</a></li>
+      </ul>
+    </nav>
+    <app-header-blocks-list class="flex flex-initial"></app-header-blocks-list>
+  </div>
+</div>

@@ -1,8 +1,10 @@
-<div class="store-page flex">
-  <app-store-sidebar class="sidebar flex-initial w-[60px]"></app-store-sidebar>
-  <div class="store-inner flex-1 px-4 container max-w-screen-xl">
+<div class="store-page flex text-slate-800">
+  <app-store-sidebar class="block sidebar flex-initial w-[60px] border-r border-slate-100"></app-store-sidebar>
+  <div class="store-inner flex-1">
     <div class="blackscreen"></div>
     <app-store-header></app-store-header>
-    <router-outlet></router-outlet>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

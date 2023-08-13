@@ -1,1 +1,49 @@
-<p-megaMenu [model]="items" orientation="vertical"></p-megaMenu>
+<div class="fixed h-full bg-blue-50 border-r-2">
+  <ul class="relative flex flex-col h-full">
+    <li class="sticky-item flex m-2 whitespace-nowrap items-center mb-4">
+      <div class="flex flex-grow px-3 h-11 items-center bg-blue-600 rounded-full text-white">
+        <mat-icon fontSet="material-symbols-rounded">menu</mat-icon>
+        <a href="#" class="pl-3">All Categories</a>
+      </div>
+    </li>
+    <li class="flex items-center py-1 px-5 h-[45px]">
+      <mat-icon fontSet="material-symbols-rounded">laptop_mac</mat-icon>
+      <a href="#" class="pl-3">Laptops, Tablets & PCs</a>
+      <ul class="sub-menu absolute h-full left-full bg-white">
+        <li class="category-title">LAPTOPS</li>
+        <li class="">Apple MacBook</li>
+        <li class="">Business Laptop</li>
+        <li class="">Gaming Laptop</li>
+        <li class="">Ultrabook</li>
+      </ul>
+    </li>
+    <li class="flex items-center py-1 px-5 h-[45px]">
+      <mat-icon fontSet="material-symbols-rounded">mouse</mat-icon>
+      <a href="#" class="pl-3">Computer & Office</a>
+    </li>
+    <li class="flex items-center py-1 px-5 h-[45px]">
+      <mat-icon fontSet="material-symbols-rounded">memory</mat-icon>
+      <a href="#" class="pl-3">Hardware & Components</a>
+    </li>
+    <li class="flex items-center py-1 px-5 h-[45px]">
+      <mat-icon fontSet="material-symbols-rounded">smartphone</mat-icon>
+      <a href="#" class="pl-3">Smartphones</a>
+    </li>
+    <li class="flex items-center py-1 px-5 h-[45px]">
+      <mat-icon fontSet="material-symbols-rounded">stadia_controller</mat-icon>
+      <a href="#" class="pl-3">Games & Entertainment</a>
+    </li>
+    <li class="flex items-center py-1 px-5 h-[45px]">
+      <mat-icon fontSet="material-symbols-rounded">tv</mat-icon>
+      <a href="#" class="pl-3">TV & Hi-Fi</a>
+    </li>
+    <li class="flex items-center py-1 px-5 h-[45px]">
+      <mat-icon fontSet="material-symbols-rounded">photo_camera</mat-icon>
+      <a href="#" class="pl-3">Photo & Video</a>
+    </li>
+    <li class="flex items-center py-1 px-5 h-[45px]">
+      <mat-icon fontSet="material-symbols-rounded">kitchen</mat-icon>
+      <a href="#" class="pl-3">Home Appliance</a>
+    </li>
+  </ul>
+</div>

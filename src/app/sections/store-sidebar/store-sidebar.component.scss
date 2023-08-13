@@ -1,23 +1,41 @@
 :host ::ng-deep {
-  .p-megamenu {
-    background: white;
-    border: unset;
-    width: 60px;
-    height: 100%;
+  z-index: 9;
 
-    .p-menuitem-text,
-    .p-submenu-icon {
-      display: none;
+  .sub-menu {
+    z-index: 8;
+    width: 275px;
+    // visibility: hidden;
+    top: 0;
+  }
+
+  &:hover {
+    li {
+      a {
+        visibility: visible;
+        padding: inherit;
+        width: 100%;
+        opacity: 1;
+      }
+
+      &:hover {
+        .sub-menu {
+          visibility: visible;
+        }
+      }
+    }
+  }
+  li {
+    .sticky-item {
+      div {
+        padding: 0;
+      }
     }
 
-    &:hover {
-      position: absolute;
-      width: auto;
-
-      .p-menuitem-text,
-      .p-submenu-icon {
-        display: block;
-      }
+    a {
+      visibility: hidden;
+      padding: 0;
+      width: 0;
+      opacity: 0;
     }
   }
 }

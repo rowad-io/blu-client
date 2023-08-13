@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-store-search',
@@ -7,7 +7,11 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./store-search.component.scss']
 })
 export class StoreSearchComponent {
-  searchGroup = new FormGroup({
-    search: new FormControl<string | null>(null)
-  });
+  searchGroup: FormGroup;
+
+  constructor(private fb: FormBuilder) {
+    this.searchGroup = this.fb.group({
+      search: new FormControl<string | null>(null),
+    });
+  }
 }

@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { StoreSearchComponent } from './store-search.component';
+import { ButtonModule } from 'primeng/button';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 describe('StoreSearchComponent', () => {
   let component: StoreSearchComponent;
@@ -8,7 +10,8 @@ describe('StoreSearchComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [StoreSearchComponent]
+      declarations: [StoreSearchComponent],
+      imports: [ButtonModule, ReactiveFormsModule],
     });
     fixture = TestBed.createComponent(StoreSearchComponent);
     component = fixture.componentInstance;

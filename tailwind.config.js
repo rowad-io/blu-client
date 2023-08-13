@@ -4,16 +4,27 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    colors: {
-      primaryColor: '',
-      secondaryColor: '',
-      primaryBgColor: '',
-      secondaryBgColor: '',
-    },
     container: {
       center: true,
+      padding: '1rem', //16px
     },
-    extend: {},
+    extend: {
+      screens: {
+        '2xl': {'max': '1400px'},
+      },
+      colors: {
+        primaryColor: '',
+        secondaryColor: '',
+        primaryBgColor: '',
+        secondaryBgColor: '',
+      },
+      fontSize: {
+        primary: ['0.875rem', { lineHeight: '1.25rem' }]
+      },
+      fontFamily: {
+
+      }
+    },
   },
   plugins: [],
 }

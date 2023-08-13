@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
-import { MegaMenuModule } from 'primeng/megamenu';
 
 import { AppComponent } from './app.component';
 import { StoreHeaderComponent } from './sections/store-header/store-header.component';
@@ -43,10 +43,10 @@ import { StoreLogoComponent } from './components/store-logo/store-logo.component
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
+    MatIconModule,
     InputTextModule,
     ButtonModule,
-    MegaMenuModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
